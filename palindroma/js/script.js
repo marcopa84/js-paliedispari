@@ -17,6 +17,9 @@ if (lunghezzaParola = 3) {
   if (primaCoppia == true){
     risultato = true;
   }
+  else{
+    risultato = false;
+  }
 }
 
 console.log('la parola è palinfroma:' + risultato);
