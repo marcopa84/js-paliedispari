@@ -1,43 +1,22 @@
 // Scrivi una funzione per capire se la parola è palindroma
 
 var parolaUtente = prompt('Inserisci la parola da verificare:');
+console.log(parolaUtente);
 
-console.log(parolaUtente[0]);
-console.log(parolaUtente[1]);
-console.log(parolaUtente[2]);
+var parolaAlContrario = giraParola(parolaUtente);
 
-var lunghezzaParola = parolaUtente.length ;
-console.log(lunghezzaParola);
-
-var risultato;
-var primaCoppia
-if (lunghezzaParola = 3) {
-  primaCoppia = compare (parolaUtente[0], parolaUtente[2]);
-  console.log('la prima coppia e:' + primaCoppia);
-  if (primaCoppia == true){
-    risultato = true;
-  }
-  else{
-    risultato = false;
-  }
+if (parolaUtente == parolaAlContrario) {
+  console.log('la parola e palindroma');
+}
+else {
+  console.log('la parola non palindroma');
 }
 
-console.log('la parola è palinfroma:' + risultato);
-
-
-
-
-
-
-
-
-// Funzione di comparazione
-
-function compare (letter1, letter2){
-  if (letter1 == letter2){
-    return true;
+function giraParola (parola) {
+  var parolaGirata = '';
+  for (var i = parola.length -1 ; i >= 0 ; i--) {
+   parolaGirata += parola[i];
   }
-  else {
-    return false;
-  }
+  return parolaGirata;
 }
+console.log(parolaAlContrario);
