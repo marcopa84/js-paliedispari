@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pari e Dispari BONUS</title>
+</head>
+<body>
+  <div class="form">
+    <div>
+      <label for="pari_dispari">Pari o Dispari:</label>
+      <select class="" name="pari_dispari" id="pari_dispari">
+      <option value="pari">Pari</option>
+      <option value="dispari">Dispari</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="numeroUtente">scegli un numero per giocare da 1 a 5:</label>
+      <input type="number" name="numeroUtente" value="" min="1" max="5" placeholder="Inserisci numero da 1 a 5" id="numero_utente">
+    </div>
+  </div>
+  <br>
+  <div>
+    <button class="btn" id="gioca">Gioca</button>
+    <button class="btn" id="annulla">Annulla</button>
+  </div>
+  <br>
+  <div class="messaggi">
+    <div>
+      <span>Hai giocato per: </span> <span id="print_paridispari"></span>
+    </div>
+    <div>
+      <span>Hai scelto: </span> <span id="print_numeroutente"></span>
+    </div>
+    <div>
+      <span>Il computer ha estratto: </span> <span id="print_numeromacchina"></span>
+    </div>
+    <div>
+      <span>La somma è: </span> <span id="print_somma"></span>
+    </div>
+    <div>
+      <span>Quindi è: </span> <span id="print_paridispariresult"></span>
+    </div>
+    <div>
+      <span>Dunque: </span> <span id="messaggio"></span>
+    </div>
+  </div>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
